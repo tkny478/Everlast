@@ -1,0 +1,345 @@
+<!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions | Everlast Scales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="logo">Everlast</div>
+    <nav class="nav" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="solutions.html" class="active">Solutions</a>
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+    </nav>
+    <button class="cta-btn">Request a Quote</button>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</header>
+
+<!-- Page Header -->
+<section class="page-hero">
+    <h1>Our Weighing Solutions</h1>
+    <p>Explore our range of precision weighing equipment for every industry.</p>
+</section>
+
+<!-- Main Layout -->
+<section class="solutions-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h3>Categories</h3>
+        <ul id="categoryList">
+            <li class="active" onclick="filterProducts('all', this)">All</li>
+            <li onclick="filterProducts('analytical', this)">Analytical Balances</li>
+            <li onclick="filterProducts('platform', this)">Platform Scales</li>
+            <li onclick="filterProducts('price', this)">Price Computing</li>
+            <li onclick="filterProducts('hanging', this)">Hanging Scales</li>
+            <li onclick="filterProducts('axle', this)">Axle Scale</li>
+            <li onclick="filterProducts('floor', this)">Floor Scales</li>
+            <li onclick="filterProducts('animal', this)">Animal Scales</li>
+            <li onclick="filterProducts('bridge', this)">Weighbridges</li>
+            <li onclick="filterProducts('loadcell', this)">Loadcells</li>
+            <li onclick="filterProducts('battery', this)">Batteries</li>
+            <li onclick="filterProducts('motherboard', this)">Motherboard</li>
+            <li onclick="filterProducts('junction', this)">Junction Box</li>
+
+        </ul>
+
+    </aside>
+
+    <!-- MAIN -->
+    <div class="main-content">
+
+        <div class="top-bar">
+            <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProducts()">
+            <button class="toggle-sidebar" onclick="toggleSidebar()">☰ Filter</button>
+        </div>
+
+      <!-- Products Grid -->
+<div class="product-grid">
+
+    <div class="product"
+         onclick="openModal(this)"
+         data-name="Price Computing Scale"
+         data-category="price"
+         data-specs="Capacity: 30Kg | Portable | High Accuracy"
+         data-description=" Designed for retail environments like butcheries, grocery stores, and fresh produce markets, this commercial digital price computing scale delivers legal-for-trade accuracy with a dual-range capacity of up to 30 kg (15 kg × 5 g / 30 kg × 10 g). It features high-visibility dual LCD/LED displays on both sides so both the operator and customer can view weight, unit price, and total price in real time. Built with a durable, easy-to-clean 304 food-grade stainless steel platter and a spill-resistant keypad."
+         data-image="images/1.jpg">
+        <img src="images/1.jpg" alt="Price Computing Scale">
+        <h4>Price Computing Scale</h4>
+        <p>Accurate price calculation for retail</p>
+    </div>
+
+    <div class="product"
+         onclick="openModal(this)"
+         data-name="Digital Platform Scale"
+         data-category="platform"
+         data-specs="Capacity: 500 kg | Digital Display | Stainless Steel"
+         data-description="​Engineered for industrial warehouses, logistics hubs, and agricultural processing facilities, this heavy-duty digital platform scale delivers high-precision weighing up to 300 kg with 50 g accuracy. Built with a rugged 400 mm × 500 mm checkered steel deck and a durable tubular frame, it features an elevated backlit LCD/LED indicator that displays net weight, gross weight, and tare values clearly in any lighting condition. It includes a spill-resistant keypad with dynamic counting and accumulation functions, seamless serial integration via an RS-232 port, and a built-in rechargeable battery providing over 80 hours of portable operation on a single charge.."
+         data-image="images/2.jpg">
+        <img src="images/2.jpg" alt="Digital Platform Scale">
+        <h4>Digital Platform Scale</h4>
+        <p>Large platform suitable for retail & commercial use</p>
+    </div>
+
+    <div class="product"
+         onclick="openModal(this)"
+         data-name="Portable Axle Scale"
+         data-category="axle"
+         data-specs="Capacity: 30 Tons | Portable | Heavy Duty"
+         data-description="Designed for heavy transport, logistics, construction, and fleet operations, this heavy-duty portable axle scale system delivers precise static and dynamic axle load measurements to prevent highway overloading fines and protect vehicle suspensions. Built from high-strength, aircraft-grade machined aluminum alloy, the ultra-low-profile weighing pads feature IP68 hermetically sealed load cells and non-slip rubber ramps, allowing seamless operation across harsh dirt, mud, and tarmac environments. The system supports up to 30 tons per axle with static accuracy within 0.5%, feeding live data directly into a portable briefcase indicator equipped with a backlit LCD screen, an integrated thermal receipt printer for instant weight tickets, and serial RS-232, USB, or wireless Bluetooth connectivity. Powered by an internal rechargeable lithium battery providing up to 40 hours of continuous field operation, it offers a complete, deployable axle-by-axle weighing solution for real-time gross and tare weight calculations"
+         data-image="images/26.jpg">
+        <img src="images/26.jpg" alt="Portable Axle Scale">
+        <h4>Portable Axle Scale</h4>
+        <p>Robust for heavy-duty vehicle weighing</p>
+    </div>
+
+    <div class="product"
+         onclick="openModal(this)"
+         data-name="Heavy Duty Floor Scale"
+         data-category="floor"
+         data-specs="Capacity: 1000 kg | Low Profile | Durable"
+         data-description="Tee6his heavy-duty floor scale delivers high-precision bulk weighing with standard capacities ranging from 1 to 5 tons. It features a rugged, low-profile checkered steel platform reinforced with heavy-gauge channel iron to resist bending under heavy forklift loading, along with four IP67-rated shear beam load cells that maintain accuracy across uneven weight distribution. The system connects via a durable shielded cable to a wall-mountable digital indicator equipped with a high-contrast backlit LED/LCD display, full tare and accumulation functions, and an RS-232 serial port for seamless integration with computers, printers, and inventory management software. Powered by a dual AC adapter and an internal rechargeable battery for mobile field deployment, it offers an all-in-one industrial weighing solution built for long-term durability in tough working environments."
+         data-image="images/4.jpg">
+        <img src="images/9.jpg" alt="Heavy Duty Floor Scale">
+        <h4>Heavy Duty Floor Scale</h4>
+        <p>Warehouse & factory use</p>
+    </div>
+
+    <div class="product"
+         onclick="openModal(this)"
+         data-name="Digital Hanging Scale"
+         data-category="hanging"
+         data-specs="Capacity: 300 kg | Hook Mount | Portable"
+         data-description="This digital crane scale delivers high-precision suspension weighing for capacities ranging from 1 to 10 tons. Built with a rugged, die-cast aluminum or heavy-gauge alloy steel housing, it features a 360-degree rotating alloy steel hook and safety shackle designed to absorb extreme tension and dynamic shock loads. The high-brightness LED display ensures clear legibility from long distances and dim workshop environments, while the included wireless remote control allows operators to perform zero, tare, hold, and unit conversion functions safely from the ground. Powered by a high-capacity rechargeable battery for up to 60 hours of continuous operation, it comes equipped with automatic overload warnings, peak-hold features, and optional RS-232 or wireless data transmission for seamless inventory and log tracking."
+         data-image="images/5.jpg">
+        <img src="images/5.jpg" alt="Digital Hanging Scale">
+        <h4>Digital Hanging Scale</h4>
+        <p>Agriculture & logistics</p>
+    </div>
+
+    <div class="product"
+         onclick="openModal(this)"
+         data-name="OCS Crane Scale"
+         data-category="hanging"
+         data-specs="Capacity: 300 kg | Livestock | Robust Frame"
+         data-description="Compact, lightweight, and engineered for heavy-duty reliability, the OCS 300kg mini digital crane scale provides high-precision suspended weighing for agricultural, workshop, market, and industrial applications. Encased in a rugged die-cast aluminum alloy housing, it features a heavy-duty stainless steel shackle and a safety-latch bottom hook designed to hold dynamic loads securely up to 300 kg (600 lb) with 0.1 kg (100 g) accuracy. The high-contrast backlit LCD screen displays weight clearly even in low-light environments, while simple key controls offer zero, tare, data hold, and instantaneous unit switching between kg, lb, and N. Powered by standard AA batteries with an intelligent auto-sleep power saving mode, it combines ultra-portable field convenience with industrial-grade strain gauge load cell precision for quick, dependable overhead weight checks."
+         data-image="images/6.jpg">
+        <img src="images/6.jpg" alt="Livestock Animal Scale">
+        <h4>OCS Crane Scale</h4>
+        <p>Hanging scale</p>
+    </div>
+    
+    <div class="product"
+         onclick="openModal(this)"
+         data-name="Zemic Loadcells"
+         data-category="loadcell"
+         data-specs="Capacity: 2 Tons | High Accuracy | Stainless Steel"
+         data-description="High-precision industrial loadcells for platform scales, hoppers, and custom scale integrations."
+         data-image="images/7.jpg">
+        <img src="images/7.jpg" alt="Zemic loadcells">
+        <h4>Zemic Loadcells 2 TON</h4>
+        <p>High-accuracy industrial sensors</p>
+    </div>
+    
+    <div class="product"
+         onclick="openModal(this)"
+         data-name="Zemic Loadcells"
+         data-category="loadcell"
+         data-specs="Capacity: 750kg | High Accuracy | Stainless Steel"
+         data-description="High-precision industrial loadcells for platform scales, hoppers, and custom scale integrations."
+         data-image="images/7.jpg">
+        <img src="images/7.jpg" alt="Zemic loadcells">
+        <h4>Zemic Loadcells 750KG</h4>
+        <p>High-accuracy industrial sensors</p>
+    </div>
+    
+    <div class="product"
+         onclick="openModal(this)"
+         data-name="Zemic Loadcells"
+         data-category="loadcell"
+         data-specs="Capacity:  350Kg| High Accuracy | Stainless Steel"
+         data-description="High-precision industrial loadcells for platform scales, hoppers, and custom scale integrations."
+         data-image="images/12.jpg">
+        <img src="images/12.jpg" alt="Zemic loadcells">
+        <h4>Zemic Loadcells 350KG</h4>
+        <p>High-accuracy industrial sensors</p>
+    </div>
+    
+    <div class="product"
+         onclick="openModal(this)"
+         data-name="Zemic Loadcells"
+         data-category="loadcell"
+         data-specs="Capacity: 180 kg | High Accuracy | Stainless Steel"
+         data-description="High-precision industrial loadcells for platform scales, hoppers, and custom scale integrations."
+         data-image="images/12.jpg">
+        <img src="images/12.jpg" alt="Zemic loadcells">
+        <h4>Zemic Loadcells 180KG</h4>
+        <p>High-accuracy industrial sensors</p>
+    </div>
+    
+    <div class="product"
+         onclick="openModal(this)"
+         data-name="Zemic Loadcells"
+         data-category="loadcell"
+         data-specs="Capacity: 40 Kg | High Accuracy | Stainless Steel"
+         data-description="High-precision industrial loadcells for platform scales, hoppers, and custom scale integrations."
+         data-image="images/15.jpg">
+        <img src="images/15.jpg" alt="Zemic loadcells">
+        <h4>Zemic Loadcells 40Kg</h4>
+        <p>High-accuracy industrial sensors</p>
+    </div>
+    
+    <div class="product"
+         onclick="openModal(this)"
+         data-name="Precision Scale"
+         data-category="Precision"
+         data-specs="Capacity: 2 Tons | High Accuracy | Stainless Steel"
+         data-description="Experience laboratory-grade accuracy with our Precision Scale. Measures 0.01g increments up to 5000g, featuring a bright LCD, tare function, stainless steel platform, and auto-calibration. Compact, durable, and battery-powered, perfect for jewelry, spices, coffee, lab work, and crafts. Accurate, reliable, essential where precision truly matters daily."
+         data-image="images/4.jpg">
+        <img src="images/4.jpg" alt="Precision Scale">
+        <h4>Precision Scale</h4>
+        <p>High-accuracy industrial sensors</p>
+    </div>
+    
+    <div class="product"
+         onclick="openModal(this)"
+         data-name="Animal Scale"
+         data-category="animal"
+         data-specs="Capacity: 2 Tons | High Accuracy | Stainless Steel"
+         data-description="Our Animal Scale ensures stress-free, accurate weighing for pets and livestock. Features large non-slip platform, high 300kg capacity, 0.1kg precision, hold function to lock weight despite movement, and bright LCD display. Durable, battery-powered, and easy to clean. Perfect for vets, farms, and pet owners daily."
+         data-image="images/25.jpg">
+        <img src="images/25.jpg" alt="Zemic loadcells">
+        <h4>Animal Scale</h4>
+        <p>Stable, durable and accurate</p>
+    </div>
+    
+    
+    
+    
+    
+    <div class="product"
+         onclick="openModal(this)"
+         data-name="Scale Rechargeable Battery (6V 4Ah)"
+         data-category="battery"
+         data-specs="Capacity: 6V 1.5Ah | Maintenance Free | Long Life"
+         data-description="Durable 6V 4Ah backup batteries compatible with most retail and bench scales."
+         data-image="images/24.jpg">
+        <img src="images/24.jpg" alt="Scale Battery">
+        <h4>6V 1.5Ah Scale Battery</h4>
+        <p>Long-lasting power backup</p>
+    </div>
+    
+    <div class="product"
+         onclick="openModal(this)"
+         data-name="Scale Rechargeable Battery (6V 1.5Ah)"
+         data-category="battery"
+         data-specs="Capacity: 6V 4Ah | Maintenance Free | Long Life"
+         data-description="Reliable 6V 1.5Ah rechargeable battery delivering stable, long-lasting power for your devices. Features sealed lead-acid design, leak-proof construction, fast charging, and overcharge protection. Compact, maintenance-free, and durable with consistent voltage output. Ideal for animal scales, emergency lights, toys, and backup systems."
+         data-image="images/22.jpg">
+        <img src="images/22.jpg" alt="Scale Battery">
+        <h4>6V 1.5Ah Scale Battery</h4>
+        <p>Long-lasting power backup</p>
+    </div>
+    
+    
+      <div class="product"
+         onclick="openModal(this)"
+         data-name="Scale Rechargeable Battery (6V 4Ah)"
+         data-category="battery"
+         data-specs="Capacity: 4V 4Ah | Maintenance Free | Long Life"
+         data-description="Power your devices reliably with our 4V 4Ah rechargeable battery. Delivers long-lasting, stable energy with fast charging, leak-proof sealed lead-acid design, and overcharge protection. Compact, maintenance-free, and highly durable. Ideal for scales, toys, lighting, and backup systems. Consistent performance you can trust daily."
+         data-image="images/23.jpg">
+        <img src="images/23.jpg" alt="Scale Battery">
+        <h4>4v 4Ah Scale Battery</h4>
+        <p>Long-lasting power backup</p>
+    </div>
+    
+    <div class="product"
+         onclick="openModal(this)"
+         data-name="Junction Box"
+         data-category="junction"
+         data-specsF"Heavy Duty| Maintenance Free | Long Life"
+         data-description="Heavy-duty Junction Box protects electrical connections safely. Made from durable, flame-retardant ABS plastic with IP65 waterproof seal, dustproof and weather-resistant. Features multiple knockouts, secure screw cover, and spacious interior for easy wiring. Ideal for outdoor, indoor, industrial, and home installations. Safe, reliable, and long-lasting."
+         data-image="images/28.jpg">
+        <img src="images/28.jpg" alt="Scale Battery">
+        <h4>Junction Box</h4>
+        <p>Long-lasting power</p>
+    </div>
+    
+    
+
+</div>
+
+
+    </div><!-- end main-content -->
+
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+    <h2>Ready to secure your profits?</h2>
+    <button onclick="openWhatsAppGeneral()">Request a Quote</button>
+</section>
+
+<!-- Modal -->
+<div id="productModal" class="modal" onclick="handleModalOutsideClick(event)">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="Product Image">
+        <h2 id="modalTitle"></h2>
+        <p id="modalSpecs" class="modal-specs"></p>
+        <p id="modalDescription"></p>
+        <button id="modalBtn"> 📩 Enquire on WhatsApp</button>
+
+        <hr>
+
+        <h3>Request a Quote</h3>
+        <input type="text" id="quoteName" placeholder="Your Name" required>
+        <input type="tel" id="quotePhone" placeholder="Phone Number" required>
+        <input type="email" id="quoteEmail" placeholder="Email Address">
+        <textarea id="quoteDetails" placeholder="Additional details (optional)"></textarea>
+        <button onclick="submitQuote()">📩 Get Quote</button>
+    </div>
+</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+      <div class="footer-columns">
+          
+          <div>
+              <h4>Everlast Scales</h4>
+              <p>Everlast Scales & Electronic Services Ltd. Quality weighing equipment, electronic repairs, and metrology services since 2021.</p>
+          </div>
+          
+          <div>
+              <h4>Quick Links</h4>
+              <p><a href="solutions.html">Product Catalog</a></p>
+              <p><a href="services.html">Services & Repairs</a></p>
+              <p><a href="about.html">About Us</a></p>
+          </div>
+          
+          <div>
+              <h4>Direct Contact</h4>
+              <p>📍 Location: Nairobi, Kenya</p>
+              <p>📞 Call/WhatsApp: <a href="https://wa.me/254712244184">+254 712 244 184</a></p>
+              <p>✉️ Email: <a href="mailto:everlastscales@gmail.com">everlastscales@gmail.com</a></p>
+          </div>
+          
+      </div>
+      
+      <div class="bottom-bar">
+          © 2026 Everlast Scales & Electronic Services Ltd. All Rights Reserved.
+      </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

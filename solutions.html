@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Weighbridge & Software Services | Everlast Scales</title>
+  <meta name="description" content="Turnkey weighbridge sales, civil foundation installation, Legal Metrology calibration, and custom weighing software automation in Kenya.">
+  <meta property="og:title" content="Weighbridge & Weighing Software Services | Everlast Scales">
+  <meta property="og:description" content="Turnkey weighbridge civil works, load cell repair, legal calibration stamping, and automated weighing software integration.">
+  <meta property="og:type" content="website">
+
+  <!-- Main External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="services-page">
+  
+  <!-- Utility Bar -->
+  <aside class="utility-bar" aria-label="Quick contact details">
+      <span>Emergency Support: <a href="tel:+254712244184">+254 712 244 184</a></span>
+      <span>Location: Nairobi & Regional Coverage Across Kenya</span>
+  </aside>
+
+  <!-- Header -->
+  <header class="header">
+<div class="logo">Everlast</div>
+
+      <nav class="nav" id="navMenu" aria-label="Main Navigation">
+          <a href="index.html">Home</a>
+          <a href="solutions.html">Solutions</a>
+          <a href="services.html" class="active">Services</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+      </nav>
+
+      <button class="cta-btn" onclick="window.location.href='contact.html'">Request a Quote</button>
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Navigation Menu">☰</button>
+  </header>
+  
+  <main id="main-content">
+
+      <!-- Page Hero -->
+      <section class="page-hero">
+          <h1>Industrial Engineering &amp; Software Solutions</h1>
+          <p>Turnkey heavy-duty weighbridge installations, legal metrology calibration, and automated weighing software systems.</p>
+      </section>
+
+      <!-- Featured Services Showcase -->
+      <div class="service-showcase">
+
+          <!-- SECTION 1: WEIGHBRIDGE SERVICES (HERO CAROUSEL WITH MULTI-IMAGE PROVISION) -->
+          <section class="feature-block">
+              
+              <!-- Horizontal Image Carousel Container -->
+              <div class="media-container carousel-container" id="weighbridgeCarousel">
+                  
+                  <!-- Track for Sliding Images (Add or remove <img> tags here as needed) -->
+                  <div class="carousel-track" id="carouselTrack">
+                      <img src="assets/hero.jpg" alt="Weighbridge Installation Site Survey" class="carousel-slide active">
+                      <img src="images/31.jpg" alt="Load Cell Calibration and Testing" class="carousel-slide">
+                      <img src="images/30.jpg" alt="Heavy-duty Pitless Truck Scale Deck" class="carousel-slide">
+                  </div>
+
+                  <!-- Overlay Badge -->
+                  <div class="media-overlay-badge">
+                      <h3>Turnkey Weighbridge Engineering</h3>
+                      <p>Heavy-duty 20T to 100T truck scale installations across East Africa</p>
+                  </div>
+
+                  <!-- Navigation Arrows -->
+                  <button class="carousel-btn btn-prev" onclick="moveCarousel(-1)" aria-label="Previous Slide">❮</button>
+                  <button class="carousel-btn btn-next" onclick="moveCarousel(1)" aria-label="Next Slide">❯</button>
+                  
+                  <!-- Must be EXACT same spelling -->
+<button onclick="moveCarousel(-1)">Prev</button>
+<button onclick="moveCarousel(1)">Next</button>
+                  
+
+                  <!-- Carousel Indicators / Dots -->
+                  <div class="carousel-dots" id="carouselDots">
+                      <span class="dot active" onclick="goToSlide(0)"></span>
+                      <span class="dot" onclick="goToSlide(1)"></span>
+                      <span class="dot" onclick="goToSlide(2)"></span>
+                  </div>
+              </div>
+
+              <!-- Detailed Explanation -->
+              <div class="explanation-content">
+                  <span class="section-tag">Primary Engineering Pillar</span>
+                  <h2>Weighbridge Sales, Installation, Maintenance &amp; Calibration</h2>
+                  <p class="lead-text">
+                      Everlast Scales &amp; Electronic Services Ltd delivers comprehensive, end-to-end weighbridge solutions built to withstand heavy daily traffic in logistics hubs, agricultural processing plants, and mining sites.
+                  </p>
+                  <p style="color: #4a5568; line-height: 1.6;">
+                      From initial site topographical surveys and concrete foundation civil works to steel deck placement and IP68 digital load cell wiring, our technical team manages every phase of deployment. We ensure your installation complies fully with the <strong>Weights &amp; Measures Department (Legal Metrology)</strong> for commercial trade accuracy.
+                  </p>
+
+                  <div class="capabilities-list">
+                      <div class="cap-item">
+                          <h4>🏗️ Turnkey Sales &amp; Civil Construction</h4>
+                          <p>Design and construction of pitless and pit-type reinforced concrete foundations engineered for maximum load distribution.</p>
+                      </div>
+                      <div class="cap-item">
+                          <h4>🛠️ Routine Maintenance &amp; Overhaul</h4>
+                          <p>Quarterly preventative maintenance, structural deck alignment, load cell zeroing, and junction box weather-sealing.</p>
+                      </div>
+                      <div class="cap-item">
+                          <h4>📜 Legal Metrology Calibration</h4>
+                          <p>ISO-traceable test truck calibrations and official verification stamping for commercial trade compliance.</p>
+                      </div>
+                      <div class="cap-item">
+                          <h4>⚡ Emergency Repair &amp; Retrofitting</h4>
+                          <p>Rapid dispatch within 24 hours for lightning surge damage, broken strain gauges, or faulty indicators.</p>
+                      </div>
+                  </div>
+
+                  <div style="margin-top: 32px;">
+                      <button class="cta-btn" onclick="openWhatsAppGeneral('Hello Everlast, I would like to inquire about weighbridge sales, civil installation, or calibration.')">💬 Speak to a Weighbridge Engineer</button>
+                  </div>
+              </div>
+          </section>
+
+
+          <!-- SECTION 2: WEIGHING SOFTWARE SOLUTIONS (WITH PROVISION FOR DEMO VIDEO / INTERACTIVE DASHBOARD) -->
+          <section class="feature-block">
+              
+              <!-- Video / Interactive Demo Provision Container -->
+              <div class="media-container software-media-container">
+                  
+                  <!-- OPTION A: Video Embed Provision (HTML5 Video or YouTube iframe) -->
+                  <!-- To use a video file: Replace this entire block with: 
+                       <video controls poster="software-thumb.jpg" style="width:100%; height:100%; object-fit:cover;">
+                           <source src="demo-video.mp4" type="video/mp4">
+                       </video> 
+                  -->
+                  
+                  <!-- OPTION B: Live Dashboard Screenshot / Animated GIF Showcase (Active Default) -->
+                  <img src="assets/philosophy.jpg" alt="Everlast Weighbridge Software Dashboard Interface" class="software-demo-img">
+                  
+                  <!-- Overlay Play/Demo Callout Badge -->
+                  <div class="media-overlay-badge software-badge">
+                      <h3>Live Weighing Automation System</h3>
+                      <p>ANPR license plate capture, barrier gates &amp; ERP database synchronization</p>
+                  </div>
+
+              </div>
+
+              <!-- Software Explanation Content -->
+              <div class="explanation-content" style="background-color: #fafbfc;">
+                  <span class="section-tag">Automation &amp; Systems Integration</span>
+                  <h2>Intelligent Weighbridge Software &amp; Automation Solutions</h2>
+                  <p class="lead-text">
+                      Eliminate human error, prevent weight fraud, and digitize your fleet operations with Everlast’s automated weighbridge management software.
+                  </p>
+                  <p style="color: #4a5568; line-height: 1.6;">
+                      Our proprietary software links directly with your scale indicators, automated barrier gates, and camera systems to capture gross, tare, and net weights automatically. It seamlessly exports real-time data to ERP systems like SAP, QuickBooks, or custom databases.
+                  </p>
+
+                  <div class="capabilities-list">
+                      <div class="cap-item">
+                          <h4>📸 ANPR License Plate Integration</h4>
+                          <p>Automatic vehicle camera identification reduces processing time and prevents manual driver plate entry errors.</p>
+                      </div>
+                      <div class="cap-item">
+                          <h4>🛡️ Fraud Prevention &amp; Anti-Tamper</h4>
+                          <p>Integrated photo capture at weighment time, positioning sensors, and weight variance alerts stop payload manipulation.</p>
+                      </div>
+                      <div class="cap-item">
+                          <h4>🔄 ERP &amp; Accounting Sync</h4>
+                          <p>Direct API integration with QuickBooks, SAP, and SQL databases for instant billing and inventory management.</p>
+                      </div>
+                      <div class="cap-item">
+                          <h4>📑 Automated Weighbill Generation</h4>
+                          <p>Instant printing and digital PDF delivery of official weight tickets with customizable field data.</p>
+                      </div>
+                  </div>
+
+                  <div style="margin-top: 32px;">
+                      <button class="cta-btn" style="background-color: #0d2b45;" onclick="openWhatsAppGeneral('Hello Everlast, I would like to request a demo of your weighbridge software.')">💻 Request a Software Demo</button>
+                  </div>
+              </div>
+          </section>
+
+      </div>
+
+      <!-- Call to Action Banner -->
+      <section class="cta" id="services-cta">
+          <h2>Ready to Upgrade Your Weighing Operations?</h2>
+          <p>Our Nairobi-based technical team performs free site surveys and software compatibility assessments nationwide.</p>
+          <button class="primary" onclick="openWhatsAppGeneral('Hello Everlast, I would like to book a site survey or consult on weighing solutions.')">💬 Consult Our Engineering Team</button>
+      </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+      <div class="footer-columns">
+
+          <!-- Column 1: Company Profile -->
+          <div>
+              <h4>Everlast Scales</h4>
+              <p>Everlast Scales &amp; Electronic Services Ltd. Quality weighing equipment, electronic repairs, and metrology services since 2021.</p>
+          </div>
+
+          <!-- Column 2: Quick Links -->
+          <div>
+              <h4>Quick Links</h4>
+              <p><a href="index.html">Home</a></p>
+              <p><a href="solutions.html">Product Catalog</a></p>
+              <p><a href="services.html">Services &amp; Repairs</a></p>
+              <p><a href="about.html">About Us</a></p>
+              <p><a href="contact.html">Contact Us</a></p>
+          </div>
+
+          <!-- Column 3: Direct Contact Details -->
+          <div>
+              <h4>Direct Contact</h4>
+              <p>📍 Location: Nairobi, Kenya</p>
+              <p>📞 Call/WhatsApp: <a href="https://wa.me/254712244184">+254 712 244 184</a></p>
+              <p>✉️ Email: <a href="mailto:everlastscales@gmail.com">everlastscales@gmail.com</a></p>
+          </div>
+
+      </div>
+
+      <!-- Copyright Bar -->
+      <div class="bottom-bar">
+          © 2026 Everlast Scales &amp; Electronic Services Ltd. All Rights Reserved.
+      </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action Button -->
+  <button class="whatsapp-float" onclick="openWhatsAppGeneral()" aria-label="Chat with Everlast Scales on WhatsApp">💬</button>
+
+  <!-- Shared Interactivity Script -->
+  <script src="main.js"></script>
+</body>
+
+</html>

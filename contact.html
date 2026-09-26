@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Contact Us | Everlast Scales & Electronic Services Ltd</title>
+  <meta name="description" content="Get in touch with Everlast Scales in Nairobi, Kenya. Contact us for scale supply, weighbridge installation, calibration, emergency repairs, and quotes.">
+  <meta property="og:title" content="Contact Everlast Scales | Scale Supply & Metrology Services">
+  <meta property="og:description" content="Reach our technical support team for scale repairs, weighbridges, and legal metrology calibration across Kenya.">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="contact-page">
+  
+  <!-- Utility Bar -->
+  <aside class="utility-bar" aria-label="Quick contact details">
+      <span>Emergency Support: <a href="tel:+254712244184">+254 712 244 184</a></span>
+      <span>Location: Nairobi & Regional Coverage Across Kenya</span>
+  </aside>
+
+  <!-- Header -->
+  <header class="header">
+     <div class="logo">Everlast</div>
+
+      <nav class="nav" id="navMenu" aria-label="Main Navigation">
+          <a href="index.html">Home</a>
+          <a href="solutions.html">Solutions</a>
+          <a href="services.html">Services</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <button class="cta-btn" onclick="window.location.href='solutions.html'">Request a Quote</button>
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Navigation Menu">☰</button>
+  </header>
+  
+  <main id="main-content">
+
+      <!-- Page Hero -->
+      <section class="page-hero">
+          <h1>Contact Technical Support</h1>
+          <p>Have questions about scale purchasing, weighbridge, or equipment servicing? Reach out to our engineers today.</p>
+      </section>
+
+      <!-- Contact Info Cards Grid -->
+      <section class="industries">
+          <div class="cards">
+              <div class="card">
+                  <div class="card-icon" aria-hidden="true">📞</div>
+                  <h4>Call / WhatsApp</h4>
+                  <p>Speak directly with our technical sales team.</p>
+                  <p><strong><a href="https://wa.me/254712244184">+254 712 244 184</a></strong></p>
+                  <p><strong><a href="https://wa.me/254723117400">+254 723 117 400</a></strong></p>
+              </div>
+
+              <div class="card">
+                  <div class="card-icon" aria-hidden="true">✉️</div>
+                  <h4>Email Support</h4>
+                  <p>Send us your official RFQs, tenders, or service requests.</p>
+                  <p><strong><a href="mailto:everlastscales@gmail.com">everlastscales@gmail.com</a></strong></p>
+              </div>
+
+              <div class="card">
+                  <div class="card-icon" aria-hidden="true">📍</div>
+                  <h4>Office Location</h4>
+                  <p>Head Office & Service Center</p>
+                  <p><strong>Nairobi, Kenya</strong></p>
+                  <p><em>(Field services dispatched nationwide)</em></p>
+              </div>
+
+              <div class="card">
+                  <div class="card-icon" aria-hidden="true">⏰</div>
+                  <h4>Business Hours</h4>
+                  <p>Monday - Friday: 8:00 AM – 5:00 PM</p>
+                  <p>Saturday: 8:00 AM – 1:00 PM</p>
+                  <p><strong>24/7 Emergency Support</strong></p>
+              </div>
+          </div>
+      </section>
+
+      <!-- Contact Form & Map Section (Image/Map Left, Content Right layout) -->
+      <section class="philosophy">
+          
+          <!-- Left: Map / Location Embed -->
+          <div class="left">
+              <div style="width: 100%; height: 100%; min-height: 380px; border-radius: 8px; overflow: hidden;">
+                  <iframe 
+                      title="Everlast Scales Location Map" 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255281.1903628766!2d36.70730723820253!3d-1.2863891880854492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1700000000000!5m2!1sen!2ske" 
+                      width="100%" 
+                      height="100%" 
+                      style="border:0; min-height: 380px;" 
+                      allowfullscreen="" 
+                      loading="lazy" 
+                      referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+              </div>
+          </div>
+
+          <!-- Right: Interactive Contact / Quote Request Form -->
+          <div class="right">
+              <h2>Send Us a Message</h2>
+              <p>Fill out the form below to request a product price quote, schedule calibration, or report equipment breakdown.</p>
+              
+              <form class="contact-form modal-form" style="display: flex; flex-direction: column; gap: 14px; width: 100%;">
+                  <div>
+                      <label for="contact-name" style="font-size: 0.9rem; font-weight: 600; display: block; margin-bottom: 4px;">Full Name / Company *</label>
+                      <input type="text" id="contact-name" name="name" placeholder="e.g. John Doe / ABC Logistics" required>
+                  </div>
+
+                  <div>
+                      <label for="contact-phone" style="font-size: 0.9rem; font-weight: 600; display: block; margin-bottom: 4px;">Phone / WhatsApp Number *</label>
+                      <input type="tel" id="contact-phone" name="phone" placeholder="e.g. +254 712 345 678" required>
+                  </div>
+
+                  <div>
+                      <label for="contact-service" style="font-size: 0.9rem; font-weight: 600; display: block; margin-bottom: 4px;">Service Required</label>
+                      <select id="contact-service" name="service" style="width: 100%; padding: 10px 12px; font-size: 0.9rem; border: 1px solid #cbd5e0; border-radius: 5px;">
+                          <option value="General Inquiry">General Inquiry</option>
+                          <option value="Weighbridge Supply & Installation">Weighbridge Supply & Installation</option>
+                          <option value="Scale Calibration & Verification">Scale Calibration & Verification</option>
+                          <option value="Scale Maintenance & Repair">Scale Maintenance & Repair</option>
+                          <option value="Commercial Scale Purchase">Commercial Scale Purchase</option>
+                      </select>
+                  </div>
+
+                  <div>
+                      <label for="contact-message" style="font-size: 0.9rem; font-weight: 600; display: block; margin-bottom: 4px;">Details / Specific Requirements</label>
+                      <textarea id="contact-message" name="message" rows="4" placeholder="Describe your scale model, capacity requirement, or repair issue..."></textarea>
+                  </div>
+
+                  <button type="submit" class="primary" style="margin-top: 6px;">💬 Submit via WhatsApp</button>
+              </form>
+          </div>
+      </section>
+
+      <!-- Frequently Asked Questions -->
+      <section class="services">
+          <h2>Frequently Asked Questions</h2>
+          <div class="services-grid">
+              <div class="service-item">
+                  <div class="service-icon" aria-hidden="true">⏱️</div>
+                  <h4>How fast is repair dispatch?</h4>
+                  <p>Our Nairobi technical team offers same-day or within-24-hour emergency site dispatch across major industrial hubs in Kenya.</p>
+              </div>
+
+              <div class="service-item">
+                  <div class="service-icon" aria-hidden="true">📜</div>
+                  <h4>Do you issue calibration certificates?</h4>
+                  <p>Yes. All calibration and verification services comply with the Weights & Measures Department (Legal Metrology) requirements.</p>
+              </div>
+
+              <div class="service-item">
+                  <div class="service-icon" aria-hidden="true">🚚</div>
+                  <h4>Do you offer regional coverage outside Nairobi?</h4>
+                  <p>Yes, we serve industrial, agricultural, and commercial clients in Mombasa, Kisumu, Eldoret, Nakuru, and across East Africa.</p>
+              </div>
+          </div>
+      </section>
+
+      <!-- Call to Action Banner -->
+      <section class="cta" id="contact">
+          <h2>Need Emergency Scale Maintenance Right Now?</h2>
+          <p>Don't let inaccurate weighments disrupt your operations. Chat directly with an engineer.</p>
+          <button class="primary" onclick="openWhatsAppGeneral('Hello Everlast, I need emergency technical assistance with my scale.')">💬 Instant WhatsApp Dispatch</button>
+      </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+      <div class="footer-columns">
+
+          <div>
+              <h4>Everlast Scales</h4>
+              <p>Everlast Scales & Electronic Services Ltd. Quality weighing equipment, electronic repairs, and metrology services since 2021.</p>
+          </div>
+
+          <div>
+              <h4>Quick Links</h4>
+              <p><a href="solutions.html">Product Catalog</a></p>
+              <p><a href="services.html">Services & Repairs</a></p>
+              <p><a href="about.html">About Us</a></p>
+          </div>
+
+          <div>
+              <h4>Direct Contact</h4>
+              <p>📍 Location: Nairobi, Kenya</p>
+              <p>📞 Call/WhatsApp: <a href="https://wa.me/254712244184">+254 712 244 184</a></p>
+              <p>✉️ Email: <a href="mailto:everlastscales@gmail.com">everlastscales@gmail.com</a></p>
+          </div>
+
+      </div>
+
+      <div class="bottom-bar">
+          © 2026 Everlast Scales & Electronic Services Ltd. All Rights Reserved.
+      </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action Button -->
+  <button class="whatsapp-float" onclick="openWhatsAppGeneral()" aria-label="Chat with Everlast Scales on WhatsApp">💬</button>
+
+  <!-- Shared Application Logic -->
+  <script src="main.js"></script>
+</body>
+
+</html>
